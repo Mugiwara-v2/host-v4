@@ -353,7 +353,8 @@ toogle_payload();
 }*/
 function load_fanthreshold(){
 var script = document.createElement('script');script.src = "fanthreshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
-progress.innerHTML="Payload loading... please wait";
+msgs.innerHTML="Payload loading... please wait";
+LoadedMSG="Fan Threshold Loaded... Press OK Now !!!";
 exec_type = "payload";
 toogle_payload();
 }

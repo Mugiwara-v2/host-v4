@@ -347,14 +347,15 @@ toogle_payload();
 /*function load_fanthreshold(){
 msgs.innerHTML="Loading Jailbreak + Fan Threshold... Please Wait !!!";
 LoadedMSG="Fan Threshold Loaded... Press OK Now !!!";
-PLfile = "fanthreshold.bin";
+PLfile = "fanthreshold.bin";localStorage.setItem('fanthreshold', tempC.value);
 exec_type = "payload";
 toogle_payload();
 }*/
 function load_fanthreshold(){
 var script = document.createElement('script');script.src = "fanthreshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Payload loading... please wait";
+msgs.innerHTML="Loading Jailbreak + Fan Threshold... Please Wait !!!";
 LoadedMSG="Fan Threshold Loaded... Press OK Now !!!";
+exec_type = "payload";
 setTimeout(poc,1500);
 }
 function load_linux(){

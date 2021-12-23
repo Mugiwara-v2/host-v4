@@ -142,7 +142,8 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_linux3() onMouseOver="msgs2.innerHTML='Linux Loader-4gb'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux-4gb </B></button></a>
 <button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_linux4() onMouseOver="msgs2.innerHTML='Linux Loader-5gb'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Linux-5gb </B></button></a>
 <br><br>
-<button style='font-size:20px;text-align:center;color:#4863A0;margin-left:275px;' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Webrte </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0;;margin-left:70px' class="pointer" onclick=load_webactivator() onMouseOver="msgs2.innerHTML='Web Activator account'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Web Activator </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0;' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WebRte </B></button></a>
 <button style="background-color:#781f1f;border-radius:50px;">
 FW- <span id="PS4fw"></span></button>
 <a href="http://night-king.karo218.ir/trainer/index.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='PS4 Traine Offline By Karo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Ps4 trainer </B></button></a>
@@ -358,6 +359,15 @@ LoadedMSG="Fan Threshold Loaded... Press OK Now !!!";
 exec_type = "payload";
 setTimeout(poc,1500);
 }
+
+function load_webactivator(){
+var script = document.createElement('script');script.src = "webactivator.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Web Activator... Please Wait !!!";
+LoadedMSG="Web Activator Loaded... Press OK Now !!!";
+exec_type = "payload";
+setTimeout(poc,1500);
+}
+
 function load_linux(){
 msgs.innerHTML="Loading Jailbreak + Linux Loader... Please Wait !!!";
 LoadedMSG="Linux Loader Loaded... Press OK Now !!!";
